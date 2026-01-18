@@ -1,0 +1,363 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 750" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    
+    <linearGradient id="frontendGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#be185d"/>
+    </linearGradient>
+    
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    
+    <linearGradient id="hrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4ade80"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f472b6"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a78bfa"/>
+    </marker>
+    
+    <!-- Drop shadow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1300" height="750" fill="url(#bgGrad)"/>
+  
+  <!-- Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.03"/>
+    </pattern>
+  </defs>
+  <rect width="1300" height="750" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="650" y="40" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700" letter-spacing="1">
+    JOB APPLICATION FLOW
+  </text>
+  <text x="650" y="65" text-anchor="middle" fill="#94a3b8" font-size="12">
+    Browse Jobs → Apply → AI Analysis → Status Tracking
+  </text>
+  
+  <!-- ============ STEP 1: BROWSE JOBS ============ -->
+  <g transform="translate(50, 100)" filter="url(#dropShadow)">
+    <!-- Step number -->
+    <circle cx="25" cy="25" r="22" fill="url(#userGrad)" stroke="#a78bfa" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">1</text>
+    
+    <!-- User icon -->
+    <circle cx="25" cy="80" r="20" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="25" cy="75" r="8" fill="#c4b5fd"/>
+    <path d="M25 85 C15 85 10 95 10 100 L40 100 C40 95 35 85 25 85" fill="#c4b5fd"/>
+    <text x="25" y="130" text-anchor="middle" fill="#c4b5fd" font-size="10" font-weight="500">Jobseeker</text>
+  </g>
+  
+  <!-- Browse Jobs Box -->
+  <g transform="translate(120, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="180" height="110" rx="12" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="35" rx="12" fill="url(#frontendGrad)"/>
+    <rect x="0" y="20" width="180" height="15" fill="url(#frontendGrad)"/>
+    <text x="90" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Browse Jobs Page</text>
+    
+    <!-- Job cards preview -->
+    <rect x="10" y="45" width="75" height="55" rx="5" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="15" y="50" width="40" height="6" rx="2" fill="#38bdf8"/>
+    <rect x="15" y="60" width="60" height="4" rx="1" fill="#475569"/>
+    <rect x="15" y="68" width="50" height="4" rx="1" fill="#475569"/>
+    <rect x="15" y="80" width="30" height="12" rx="3" fill="#059669"/>
+    <text x="30" y="89" fill="#fff" font-size="6">Apply</text>
+    
+    <rect x="95" y="45" width="75" height="55" rx="5" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="100" y="50" width="45" height="6" rx="2" fill="#38bdf8"/>
+    <rect x="100" y="60" width="55" height="4" rx="1" fill="#475569"/>
+    <rect x="100" y="68" width="45" height="4" rx="1" fill="#475569"/>
+    <rect x="100" y="80" width="30" height="12" rx="3" fill="#059669"/>
+    <text x="115" y="89" fill="#fff" font-size="6">Apply</text>
+  </g>
+  
+  <!-- Arrow to step 2 -->
+  <path d="M300 155 L340 155" stroke="#38bdf8" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="320" y="145" fill="#38bdf8" font-size="9">Select Job</text>
+  
+  <!-- ============ STEP 2: APPLICATION FORM ============ -->
+  <g transform="translate(350, 100)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="url(#frontendGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">2</text>
+  </g>
+  
+  <!-- Application Form Box -->
+  <g transform="translate(400, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="200" height="130" rx="12" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+    <rect x="0" y="0" width="200" height="35" rx="12" fill="url(#frontendGrad)"/>
+    <rect x="0" y="20" width="200" height="15" fill="url(#frontendGrad)"/>
+    <text x="100" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Click Apply Button</text>
+    
+    <!-- Form fields -->
+    <text x="15" y="55" fill="#94a3b8" font-size="9">Resume:</text>
+    <rect x="60" y="45" width="130" height="18" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="70" y="57" fill="#4ade80" font-size="8">✓ my_resume.pdf</text>
+    
+    <text x="15" y="82" fill="#94a3b8" font-size="9">Cover Letter:</text>
+    <rect x="15" y="88" width="170" height="30" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="102" fill="#64748b" font-size="7">Optional message to employer...</text>
+    
+    <rect x="130" y="122" width="60" height="22" rx="5" fill="#059669"/>
+    <text x="160" y="136" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Submit</text>
+  </g>
+  
+  <!-- Arrow to step 3 -->
+  <path d="M600 155 L640 155" stroke="#fbbf24" stroke-width="2.5" fill="none" marker-end="url(#arrowOrange)"/>
+  <text x="620" y="145" fill="#fbbf24" font-size="9">POST</text>
+  
+  <!-- ============ STEP 3: API PROCESSING ============ -->
+  <g transform="translate(650, 100)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="url(#apiGrad)" stroke="#fbbf24" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">3</text>
+  </g>
+  
+  <!-- API Route Box -->
+  <g transform="translate(700, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="180" height="130" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="35" rx="12" fill="url(#apiGrad)"/>
+    <rect x="0" y="20" width="180" height="15" fill="url(#apiGrad)"/>
+    <text x="90" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">API: /applications</text>
+    
+    <text x="15" y="55" fill="#fbbf24" font-size="9" font-weight="600">Process:</text>
+    <text x="15" y="72" fill="#94a3b8" font-size="9">1. Validate request</text>
+    <text x="15" y="87" fill="#94a3b8" font-size="9">2. Create application record</text>
+    <text x="15" y="102" fill="#94a3b8" font-size="9">3. Set status = 'pending'</text>
+    <text x="15" y="117" fill="#f472b6" font-size="9" font-weight="600">4. Trigger AI analysis →</text>
+  </g>
+  
+  <!-- Arrow to Database -->
+  <path d="M880 130 L920 130 Q950 130 950 160 L950 270" stroke="#4ade80" stroke-width="2.5" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="920" y="200" fill="#4ade80" font-size="8">INSERT</text>
+  
+  <!-- ============ DATABASE ============ -->
+  <g transform="translate(880, 280)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="160" height="120" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="160" height="35" rx="12" fill="url(#dbGrad)"/>
+    <rect x="0" y="20" width="160" height="15" fill="url(#dbGrad)"/>
+    <text x="80" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">applications</text>
+    
+    <text x="15" y="52" fill="#64748b" font-size="8">id:</text>
+    <text x="60" y="52" fill="#94a3b8" font-size="8">uuid</text>
+    <text x="15" y="65" fill="#64748b" font-size="8">user_id:</text>
+    <text x="60" y="65" fill="#94a3b8" font-size="8">fk → profiles</text>
+    <text x="15" y="78" fill="#64748b" font-size="8">job_id:</text>
+    <text x="60" y="78" fill="#94a3b8" font-size="8">fk → jobs</text>
+    <text x="15" y="91" fill="#64748b" font-size="8">status:</text>
+    <text x="60" y="91" fill="#fbbf24" font-size="8">'pending'</text>
+    <text x="15" y="104" fill="#64748b" font-size="8">ats_score:</text>
+    <text x="60" y="104" fill="#f472b6" font-size="8">← from ML</text>
+  </g>
+  
+  <!-- ============ STEP 4: ML SERVICE ============ -->
+  <g transform="translate(350, 280)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="url(#mlGrad)" stroke="#f472b6" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">4</text>
+  </g>
+  
+  <!-- Arrow from API to ML -->
+  <path d="M790 230 L790 260 Q790 280 770 280 L550 280 Q530 280 530 300 L530 320" stroke="#f472b6" stroke-width="2.5" fill="none" marker-end="url(#arrowPink)"/>
+  <text x="660" y="270" fill="#f472b6" font-size="8">/analyze-resume</text>
+  
+  <!-- ML Service Box -->
+  <g transform="translate(400, 280)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="260" height="150" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
+    <rect x="0" y="0" width="260" height="35" rx="12" fill="url(#mlGrad)"/>
+    <rect x="0" y="20" width="260" height="15" fill="url(#mlGrad)"/>
+    <text x="130" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">ML Service (Python/Railway)</text>
+    
+    <!-- Processing steps -->
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="70" height="40" rx="6" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="35" y="18" text-anchor="middle" fill="#c4b5fd" font-size="8" font-weight="500">PDF</text>
+      <text x="35" y="30" text-anchor="middle" fill="#c4b5fd" font-size="7">Extraction</text>
+    </g>
+    <path d="M90 65 L100 65" stroke="#a78bfa" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+    
+    <g transform="translate(105, 45)">
+      <rect x="0" y="0" width="70" height="40" rx="6" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="35" y="18" text-anchor="middle" fill="#c4b5fd" font-size="8" font-weight="500">TF-IDF</text>
+      <text x="35" y="30" text-anchor="middle" fill="#c4b5fd" font-size="7">Vectorize</text>
+    </g>
+    <path d="M180 65 L190 65" stroke="#a78bfa" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+    
+    <g transform="translate(195, 45)">
+      <rect x="0" y="0" width="55" height="40" rx="6" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="27" y="18" text-anchor="middle" fill="#c4b5fd" font-size="8" font-weight="500">Cosine</text>
+      <text x="27" y="30" text-anchor="middle" fill="#c4b5fd" font-size="7">Similarity</text>
+    </g>
+    
+    <!-- Output metrics -->
+    <rect x="15" y="95" width="230" height="45" rx="6" fill="#0d1117" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="112" fill="#4ade80" font-size="9">✓ ATS Score:</text>
+    <text x="95" y="112" fill="#fff" font-size="9" font-weight="600">78.5%</text>
+    <text x="130" y="112" fill="#38bdf8" font-size="9">✓ Category:</text>
+    <text x="185" y="112" fill="#fff" font-size="9" font-weight="600">Developer</text>
+    <text x="25" y="130" fill="#fbbf24" font-size="9">✓ Confidence:</text>
+    <text x="100" y="130" fill="#fff" font-size="9" font-weight="600">85.2%</text>
+  </g>
+  
+  <!-- Arrow from ML to Database (update) -->
+  <path d="M660 355 L720 355 Q750 355 750 380 L750 420 Q750 450 800 450 L820 450 Q850 450 870 420 L870 400" stroke="#4ade80" stroke-width="2" fill="none" stroke-dasharray="6,3" marker-end="url(#arrowGreen)"/>
+  <text x="780" y="465" fill="#4ade80" font-size="8">UPDATE scores</text>
+  
+  <!-- ============ STEP 5: HR REVIEW ============ -->
+  <g transform="translate(50, 480)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="url(#hrGrad)" stroke="#fb923c" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">5</text>
+    
+    <!-- HR icon -->
+    <circle cx="25" cy="85" r="20" fill="#431407" stroke="#f97316" stroke-width="2"/>
+    <circle cx="25" cy="80" r="8" fill="#fdba74"/>
+    <path d="M25 90 C15 90 10 100 10 105 L40 105 C40 100 35 90 25 90" fill="#fdba74"/>
+    <rect x="32" y="72" width="12" height="10" rx="2" fill="#fdba74"/>
+    <text x="25" y="135" text-anchor="middle" fill="#fdba74" font-size="10" font-weight="500">HR Manager</text>
+  </g>
+  
+  <!-- HR Dashboard Box -->
+  <g transform="translate(120, 480)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="320" height="160" rx="12" fill="#0f172a" stroke="#f97316" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="35" rx="12" fill="url(#hrGrad)"/>
+    <rect x="0" y="20" width="320" height="15" fill="url(#hrGrad)"/>
+    <text x="160" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">HR Dashboard - Application Review</text>
+    
+    <!-- Application card with AI metrics -->
+    <rect x="15" y="45" width="290" height="100" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <text x="25" y="65" fill="#fff" font-size="10" font-weight="600">John Doe</text>
+    <text x="25" y="80" fill="#64748b" font-size="9">Applied for: Senior Developer</text>
+    
+    <!-- AI Metrics display -->
+    <rect x="25" y="90" width="80" height="45" rx="5" fill="#0d1117" stroke="#4ade80" stroke-width="1"/>
+    <text x="65" y="107" text-anchor="middle" fill="#4ade80" font-size="8">ATS Score</text>
+    <text x="65" y="125" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">78.5%</text>
+    
+    <rect x="115" y="90" width="80" height="45" rx="5" fill="#0d1117" stroke="#38bdf8" stroke-width="1"/>
+    <text x="155" y="107" text-anchor="middle" fill="#38bdf8" font-size="8">Category</text>
+    <text x="155" y="125" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Developer</text>
+    
+    <rect x="205" y="90" width="80" height="45" rx="5" fill="#0d1117" stroke="#fbbf24" stroke-width="1"/>
+    <text x="245" y="107" text-anchor="middle" fill="#fbbf24" font-size="8">Confidence</text>
+    <text x="245" y="125" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">85.2%</text>
+  </g>
+  
+  <!-- Arrow from DB to HR -->
+  <path d="M880 340 L500 500 Q480 510 460 500 L440 490" stroke="#4ade80" stroke-width="2" fill="none" stroke-dasharray="6,3" marker-end="url(#arrowGreen)"/>
+  <text x="680" y="410" fill="#4ade80" font-size="8">Fetch applications</text>
+  
+  <!-- ============ STEP 6: STATUS UPDATE ============ -->
+  <g transform="translate(500, 480)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="#059669" stroke="#4ade80" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">6</text>
+  </g>
+  
+  <!-- Status Options -->
+  <g transform="translate(550, 480)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="200" height="160" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <text x="100" y="25" text-anchor="middle" fill="#4ade80" font-size="11" font-weight="600">Update Status</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Status buttons -->
+    <rect x="20" y="50" width="160" height="28" rx="6" fill="#059669"/>
+    <text x="100" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">✓ Accept</text>
+    
+    <rect x="20" y="85" width="160" height="28" rx="6" fill="#dc2626"/>
+    <text x="100" y="103" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">✗ Reject</text>
+    
+    <rect x="20" y="120" width="160" height="28" rx="6" fill="#2563eb"/>
+    <text x="100" y="138" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">◐ Under Review</text>
+  </g>
+  
+  <!-- Arrow to final DB update -->
+  <path d="M750 560 L850 560 Q880 560 900 530 L920 500 Q940 470 960 440" stroke="#4ade80" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="860" y="530" fill="#4ade80" font-size="8">UPDATE status</text>
+  
+  <!-- ============ STEP 7: NOTIFICATION ============ -->
+  <g transform="translate(800, 520)" filter="url(#dropShadow)">
+    <circle cx="25" cy="25" r="22" fill="#8b5cf6" stroke="#a78bfa" stroke-width="2"/>
+    <text x="25" y="31" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">7</text>
+  </g>
+  
+  <!-- Notification to Jobseeker -->
+  <g transform="translate(850, 520)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="160" height="80" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="80" y="22" text-anchor="middle" fill="#c4b5fd" font-size="10" font-weight="600">Notify Applicant</text>
+    <line x1="10" y1="30" x2="150" y2="30" stroke="#2d2655" stroke-width="1"/>
+    
+    <rect x="15" y="40" width="130" height="30" rx="5" fill="#1e1b4b"/>
+    <text x="80" y="55" text-anchor="middle" fill="#a78bfa" font-size="8">📧 Email notification</text>
+    <text x="80" y="67" text-anchor="middle" fill="#64748b" font-size="7">Status: Accepted!</text>
+  </g>
+  
+  <!-- Arrow back to user -->
+  <path d="M930 600 L930 660 Q930 680 900 680 L150 680 Q100 680 100 650 L100 620 Q100 590 80 575" stroke="#a78bfa" stroke-width="2" fill="none" stroke-dasharray="6,3" marker-end="url(#arrowPurple)"/>
+  <text x="500" y="695" fill="#a78bfa" font-size="9">Status update notification</text>
+  
+  <!-- ============ LEGEND ============ -->
+  <g transform="translate(1050, 280)">
+    <rect x="0" y="0" width="200" height="180" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="100" y="25" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600">FLOW LEGEND</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#334155" stroke-width="1"/>
+    
+    <circle cx="30" cy="55" r="10" fill="url(#userGrad)"/>
+    <text x="50" y="59" fill="#94a3b8" font-size="9">Jobseeker Action</text>
+    
+    <circle cx="30" cy="80" r="10" fill="url(#frontendGrad)"/>
+    <text x="50" y="84" fill="#94a3b8" font-size="9">Frontend UI</text>
+    
+    <circle cx="30" cy="105" r="10" fill="url(#apiGrad)"/>
+    <text x="50" y="109" fill="#94a3b8" font-size="9">API Processing</text>
+    
+    <circle cx="30" cy="130" r="10" fill="url(#mlGrad)"/>
+    <text x="50" y="134" fill="#94a3b8" font-size="9">ML Analysis</text>
+    
+    <circle cx="30" cy="155" r="10" fill="url(#dbGrad)"/>
+    <text x="50" y="159" fill="#94a3b8" font-size="9">Database</text>
+    
+    <circle cx="30" cy="180" r="10" fill="url(#hrGrad)"/>
+    <text x="50" y="184" fill="#94a3b8" font-size="9">HR Action</text>
+  </g>
+  
+</svg>
