@@ -1,0 +1,419 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#be185d"/>
+    </linearGradient>
+    
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    
+    <marker id="arrowRight" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <rect width="1400" height="700" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700">HR MANAGER USER FLOW</text>
+  <text x="700" y="65" text-anchor="middle" fill="#94a3b8" font-size="12">Complete Journey: Registration → Company Setup → Post Jobs → Review Applications → Make Decisions</text>
+  
+  <!-- HR User icon -->
+  <g transform="translate(30, 100)">
+    <circle cx="40" cy="40" r="35" fill="url(#orangeGrad)" stroke="#fb923c" stroke-width="2"/>
+    <circle cx="40" cy="32" r="12" fill="#fff"/>
+    <path d="M40 46 C22 46 15 62 15 72 L65 72 C65 62 58 46 40 46" fill="#fff"/>
+    <rect x="50" y="25" width="15" height="12" rx="2" fill="#fff"/>
+    <text x="40" y="95" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="600">HR Manager</text>
+  </g>
+  
+  <!-- STEP 1: Registration -->
+  <g transform="translate(130, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="180" height="35" rx="10" fill="url(#orangeGrad)"/>
+    <rect x="0" y="20" width="180" height="15" fill="url(#orangeGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">1</text>
+    <text x="95" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">REGISTER AS HR</text>
+    
+    <!-- Form fields -->
+    <rect x="15" y="45" width="150" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="59" fill="#64748b" font-size="8">Email address</text>
+    
+    <rect x="15" y="72" width="150" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="86" fill="#64748b" font-size="8">Password</text>
+    
+    <!-- Account type -->
+    <text x="15" y="110" fill="#94a3b8" font-size="9">Account Type:</text>
+    <rect x="15" y="117" width="70" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="131" text-anchor="middle" fill="#64748b" font-size="8">Jobseeker</text>
+    <rect x="95" y="117" width="70" height="20" rx="4" fill="#f97316" stroke="#fb923c" stroke-width="1"/>
+    <text x="130" y="131" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">HR</text>
+    
+    <rect x="40" y="155" width="100" height="28" rx="5" fill="#f97316"/>
+    <text x="90" y="174" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Sign Up</text>
+  </g>
+  
+  <!-- Arrow 1-2 -->
+  <path d="M310 200 L340 200" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 2: Company Profile -->
+  <g transform="translate(350, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="180" height="35" rx="10" fill="url(#blueGrad)"/>
+    <rect x="0" y="20" width="180" height="15" fill="url(#blueGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">2</text>
+    <text x="95" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">COMPANY PROFILE</text>
+    
+    <!-- Company info -->
+    <rect x="15" y="45" width="150" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="59" fill="#64748b" font-size="8">Company Name</text>
+    
+    <rect x="15" y="72" width="150" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="86" fill="#64748b" font-size="8">Your Position / Title</text>
+    
+    <rect x="15" y="99" width="70" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="113" fill="#64748b" font-size="8">First Name</text>
+    <rect x="95" y="99" width="70" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="105" y="113" fill="#64748b" font-size="8">Last Name</text>
+    
+    <rect x="15" y="126" width="150" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="140" fill="#64748b" font-size="8">Phone Number</text>
+    
+    <rect x="40" y="155" width="100" height="28" rx="5" fill="#3b82f6"/>
+    <text x="90" y="174" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Save Profile</text>
+  </g>
+  
+  <!-- Arrow 2-3 -->
+  <path d="M530 200 L560 200" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 3: HR Dashboard -->
+  <g transform="translate(570, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="220" height="200" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="220" height="35" rx="10" fill="url(#greenGrad)"/>
+    <rect x="0" y="20" width="220" height="15" fill="url(#greenGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">3</text>
+    <text x="115" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">HR DASHBOARD</text>
+    
+    <!-- Stats -->
+    <rect x="10" y="45" width="60" height="45" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="40" y="65" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="700">3</text>
+    <text x="40" y="82" text-anchor="middle" fill="#64748b" font-size="7">Active Jobs</text>
+    
+    <rect x="80" y="45" width="60" height="45" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="110" y="65" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="700">12</text>
+    <text x="110" y="82" text-anchor="middle" fill="#64748b" font-size="7">Applications</text>
+    
+    <rect x="150" y="45" width="60" height="45" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="180" y="65" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="700">5</text>
+    <text x="180" y="82" text-anchor="middle" fill="#64748b" font-size="7">New Today</text>
+    
+    <!-- Quick actions -->
+    <text x="15" y="110" fill="#94a3b8" font-size="9" font-weight="500">Quick Actions</text>
+    
+    <rect x="10" y="118" width="95" height="30" rx="5" fill="#10b981"/>
+    <text x="57" y="138" text-anchor="middle" fill="#fff" font-size="9" font-weight="500">+ Post New Job</text>
+    
+    <rect x="115" y="118" width="95" height="30" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="162" y="138" text-anchor="middle" fill="#94a3b8" font-size="9">View Applications</text>
+    
+    <!-- My jobs list preview -->
+    <rect x="10" y="155" width="200" height="35" rx="4" fill="#0f172a"/>
+    <text x="20" y="172" fill="#f8fafc" font-size="9" font-weight="500">Full Stack Engineer</text>
+    <text x="20" y="185" fill="#64748b" font-size="7">4 applications • Posted 2 days ago</text>
+  </g>
+  
+  <!-- Arrow 3-4 -->
+  <path d="M790 200 L820 200" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 4: Post Job -->
+  <g transform="translate(830, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="240" height="200" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="240" height="35" rx="10" fill="url(#purpleGrad)"/>
+    <rect x="0" y="20" width="240" height="15" fill="url(#purpleGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">4</text>
+    <text x="125" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">POST NEW JOB</text>
+    
+    <!-- Job form -->
+    <rect x="10" y="45" width="110" height="18" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="57" fill="#64748b" font-size="7">Job Title *</text>
+    <rect x="125" y="45" width="105" height="18" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="133" y="57" fill="#64748b" font-size="7">Location</text>
+    
+    <rect x="10" y="68" width="110" height="18" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="80" fill="#64748b" font-size="7">Job Type</text>
+    <rect x="125" y="68" width="105" height="18" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="133" y="80" fill="#64748b" font-size="7">Salary Range</text>
+    
+    <rect x="10" y="91" width="220" height="35" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="105" fill="#64748b" font-size="7">Job Description *</text>
+    <text x="18" y="118" fill="#475569" font-size="6">Describe responsibilities and qualifications...</text>
+    
+    <!-- Requirements tags -->
+    <text x="15" y="140" fill="#94a3b8" font-size="8">Requirements:</text>
+    <rect x="10" y="145" width="45" height="16" rx="3" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="32" y="156" text-anchor="middle" fill="#a78bfa" font-size="7">React</text>
+    <rect x="60" y="145" width="50" height="16" rx="3" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="85" y="156" text-anchor="middle" fill="#a78bfa" font-size="7">Node.js</text>
+    <rect x="115" y="145" width="35" height="16" rx="3" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="132" y="156" text-anchor="middle" fill="#a78bfa" font-size="7">+ Add</text>
+    
+    <rect x="60" y="168" width="120" height="25" rx="5" fill="#8b5cf6"/>
+    <text x="120" y="185" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Publish Job</text>
+  </g>
+  
+  <!-- Arrow down to row 2 -->
+  <path d="M950 300 L950 340 Q950 360 930 360 L800 360 Q780 360 780 380 L780 410" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 5: View Applications -->
+  <g transform="translate(620, 410)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="320" height="240" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="320" height="35" rx="10" fill="url(#pinkGrad)"/>
+    <rect x="0" y="20" width="320" height="15" fill="url(#pinkGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">5</text>
+    <text x="165" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">VIEW APPLICATIONS</text>
+    
+    <!-- Filter bar -->
+    <rect x="10" y="45" width="140" height="22" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="60" fill="#64748b" font-size="8">🔍 Search applicants...</text>
+    <rect x="155" y="45" width="70" height="22" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="190" y="60" text-anchor="middle" fill="#64748b" font-size="8">Status ▼</text>
+    <rect x="230" y="45" width="80" height="22" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="270" y="60" text-anchor="middle" fill="#64748b" font-size="8">Position ▼</text>
+    
+    <!-- Application list -->
+    <rect x="10" y="75" width="300" height="70" rx="6" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
+    <circle cx="35" cy="100" r="15" fill="#1e3a5f"/>
+    <text x="35" y="105" text-anchor="middle" fill="#38bdf8" font-size="12">JD</text>
+    <text x="60" y="93" fill="#f8fafc" font-size="10" font-weight="600">John Doe</text>
+    <text x="60" y="107" fill="#64748b" font-size="8">Applied for: Full Stack Engineer</text>
+    <text x="60" y="120" fill="#475569" font-size="7">Applied: Jan 15, 2026</text>
+    
+    <!-- AI Metrics inline -->
+    <rect x="175" y="85" width="50" height="28" rx="4" fill="#052e16" stroke="#166534" stroke-width="1"/>
+    <text x="200" y="97" text-anchor="middle" fill="#4ade80" font-size="7">ATS</text>
+    <text x="200" y="108" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">78%</text>
+    
+    <rect x="230" y="85" width="70" height="28" rx="4" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="265" y="97" text-anchor="middle" fill="#a78bfa" font-size="7">Category</text>
+    <text x="265" y="108" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">Developer</text>
+    
+    <rect x="250" y="118" width="55" height="18" rx="4" fill="#fbbf24"/>
+    <text x="277" y="130" text-anchor="middle" fill="#000" font-size="7" font-weight="600">Pending</text>
+    
+    <!-- Second application -->
+    <rect x="10" y="155" width="300" height="70" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <circle cx="35" cy="180" r="15" fill="#1e3a5f"/>
+    <text x="35" y="185" text-anchor="middle" fill="#38bdf8" font-size="12">AS</text>
+    <text x="60" y="173" fill="#f8fafc" font-size="10" font-weight="600">Alice Smith</text>
+    <text x="60" y="187" fill="#64748b" font-size="8">Applied for: Full Stack Engineer</text>
+    <text x="60" y="200" fill="#475569" font-size="7">Applied: Jan 14, 2026</text>
+    
+    <rect x="175" y="165" width="50" height="28" rx="4" fill="#052e16" stroke="#166534" stroke-width="1"/>
+    <text x="200" y="177" text-anchor="middle" fill="#4ade80" font-size="7">ATS</text>
+    <text x="200" y="188" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">92%</text>
+    
+    <rect x="230" y="165" width="70" height="28" rx="4" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="265" y="177" text-anchor="middle" fill="#a78bfa" font-size="7">Category</text>
+    <text x="265" y="188" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">Developer</text>
+    
+    <rect x="250" y="198" width="55" height="18" rx="4" fill="#3b82f6"/>
+    <text x="277" y="210" text-anchor="middle" fill="#fff" font-size="7" font-weight="600">Review</text>
+  </g>
+  
+  <!-- Arrow 5-6 -->
+  <path d="M620 530 L590 530" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 6: Review Details -->
+  <g transform="translate(310, 410)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="270" height="240" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="270" height="35" rx="10" fill="url(#cyanGrad)"/>
+    <rect x="0" y="20" width="270" height="15" fill="url(#cyanGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">6</text>
+    <text x="140" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">REVIEW APPLICATION</text>
+    
+    <!-- Candidate info -->
+    <circle cx="35" cy="65" r="20" fill="#1e3a5f" stroke="#38bdf8" stroke-width="2"/>
+    <text x="35" y="70" text-anchor="middle" fill="#38bdf8" font-size="14">JD</text>
+    <text x="70" y="58" fill="#f8fafc" font-size="12" font-weight="600">John Doe</text>
+    <text x="70" y="73" fill="#64748b" font-size="9">john.doe@email.com</text>
+    
+    <line x1="15" y1="95" x2="255" y2="95" stroke="#334155" stroke-width="1"/>
+    
+    <!-- AI Metrics display -->
+    <text x="20" y="115" fill="#94a3b8" font-size="9" font-weight="500">AI Analysis Results</text>
+    
+    <rect x="15" y="125" width="75" height="45" rx="6" fill="#052e16" stroke="#166534" stroke-width="1"/>
+    <text x="52" y="142" text-anchor="middle" fill="#4ade80" font-size="8">ATS Score</text>
+    <text x="52" y="162" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">78.5%</text>
+    
+    <rect x="97" y="125" width="80" height="45" rx="6" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="137" y="142" text-anchor="middle" fill="#a78bfa" font-size="8">Predicted Category</text>
+    <text x="137" y="162" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Developer</text>
+    
+    <rect x="184" y="125" width="70" height="45" rx="6" fill="#451a03" stroke="#92400e" stroke-width="1"/>
+    <text x="219" y="142" text-anchor="middle" fill="#fbbf24" font-size="8">Confidence</text>
+    <text x="219" y="162" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">85%</text>
+    
+    <!-- Actions -->
+    <text x="20" y="190" fill="#94a3b8" font-size="9" font-weight="500">Resume and Cover Letter</text>
+    <rect x="15" y="198" width="115" height="25" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="72" y="215" text-anchor="middle" fill="#38bdf8" font-size="9">📄 View Resume</text>
+    <rect x="140" y="198" width="115" height="25" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="197" y="215" text-anchor="middle" fill="#94a3b8" font-size="9">📝 Cover Letter</text>
+  </g>
+  
+  <!-- Arrow 6-7 -->
+  <path d="M310 530 L280 530" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowRight)"/>
+  
+  <!-- STEP 7: Make Decision -->
+  <g transform="translate(30, 410)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="240" height="240" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="240" height="35" rx="10" fill="url(#greenGrad)"/>
+    <rect x="0" y="20" width="240" height="15" fill="url(#greenGrad)"/>
+    <circle cx="20" cy="17" r="10" fill="#fff" opacity="0.2"/>
+    <text x="17" y="22" fill="#fff" font-size="12" font-weight="700">7</text>
+    <text x="125" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">MAKE DECISION</text>
+    
+    <!-- Candidate summary -->
+    <text x="20" y="55" fill="#f8fafc" font-size="11" font-weight="600">John Doe</text>
+    <text x="20" y="70" fill="#64748b" font-size="9">Full Stack Engineer Position</text>
+    
+    <line x1="15" y1="82" x2="225" y2="82" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Decision buttons -->
+    <text x="20" y="100" fill="#94a3b8" font-size="9" font-weight="500">Update Application Status</text>
+    
+    <rect x="15" y="110" width="210" height="35" rx="6" fill="#10b981"/>
+    <text x="120" y="132" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">✓ Accept Candidate</text>
+    
+    <rect x="15" y="152" width="210" height="35" rx="6" fill="#ef4444"/>
+    <text x="120" y="174" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">✗ Reject Application</text>
+    
+    <rect x="15" y="194" width="210" height="35" rx="6" fill="#3b82f6"/>
+    <text x="120" y="216" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">◐ Mark for Further Review</text>
+  </g>
+  
+  <!-- Flow summary -->
+  <g transform="translate(970, 410)">
+    <rect x="0" y="0" width="400" height="240" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    
+    <text x="200" y="28" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">HR MANAGER JOURNEY SUMMARY</text>
+    <line x1="20" y1="42" x2="380" y2="42" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Steps summary -->
+    <g transform="translate(20, 55)">
+      <circle cx="12" cy="10" r="10" fill="url(#orangeGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">1</text>
+      <text x="32" y="14" fill="#fdba74" font-size="9" font-weight="500">Register as HR</text>
+    </g>
+    
+    <g transform="translate(20, 80)">
+      <circle cx="12" cy="10" r="10" fill="url(#blueGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">2</text>
+      <text x="32" y="14" fill="#93c5fd" font-size="9" font-weight="500">Setup Company Profile</text>
+    </g>
+    
+    <g transform="translate(20, 105)">
+      <circle cx="12" cy="10" r="10" fill="url(#greenGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">3</text>
+      <text x="32" y="14" fill="#6ee7b7" font-size="9" font-weight="500">Access HR Dashboard</text>
+    </g>
+    
+    <g transform="translate(20, 130)">
+      <circle cx="12" cy="10" r="10" fill="url(#purpleGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">4</text>
+      <text x="32" y="14" fill="#c4b5fd" font-size="9" font-weight="500">Post Job Openings</text>
+    </g>
+    
+    <g transform="translate(200, 55)">
+      <circle cx="12" cy="10" r="10" fill="url(#pinkGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">5</text>
+      <text x="32" y="14" fill="#f9a8d4" font-size="9" font-weight="500">View Applications</text>
+    </g>
+    
+    <g transform="translate(200, 80)">
+      <circle cx="12" cy="10" r="10" fill="url(#cyanGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">6</text>
+      <text x="32" y="14" fill="#67e8f9" font-size="9" font-weight="500">Review with AI Insights</text>
+    </g>
+    
+    <g transform="translate(200, 105)">
+      <circle cx="12" cy="10" r="10" fill="url(#greenGrad)"/>
+      <text x="9" y="14" fill="#fff" font-size="9" font-weight="700">7</text>
+      <text x="32" y="14" fill="#6ee7b7" font-size="9" font-weight="500">Make Hiring Decision</text>
+    </g>
+    
+    <!-- AI Features highlight -->
+    <rect x="20" y="150" width="360" height="75" rx="8" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+    <text x="200" y="172" text-anchor="middle" fill="#a78bfa" font-size="10" font-weight="600">AI-Powered Hiring Insights</text>
+    
+    <g transform="translate(35, 182)">
+      <rect x="0" y="0" width="90" height="30" rx="5" fill="#052e16" stroke="#166534" stroke-width="1"/>
+      <text x="45" y="13" text-anchor="middle" fill="#4ade80" font-size="8">ATS Score</text>
+      <text x="45" y="25" text-anchor="middle" fill="#fff" font-size="8">Resume Match %</text>
+    </g>
+    
+    <g transform="translate(140, 182)">
+      <rect x="0" y="0" width="90" height="30" rx="5" fill="#1e3a5f" stroke="#1d4ed8" stroke-width="1"/>
+      <text x="45" y="13" text-anchor="middle" fill="#38bdf8" font-size="8">Category</text>
+      <text x="45" y="25" text-anchor="middle" fill="#fff" font-size="8">Predicted Role</text>
+    </g>
+    
+    <g transform="translate(245, 182)">
+      <rect x="0" y="0" width="90" height="30" rx="5" fill="#451a03" stroke="#92400e" stroke-width="1"/>
+      <text x="45" y="13" text-anchor="middle" fill="#fbbf24" font-size="8">Confidence</text>
+      <text x="45" y="25" text-anchor="middle" fill="#fff" font-size="8">AI Certainty %</text>
+    </g>
+  </g>
+  
+</svg>
